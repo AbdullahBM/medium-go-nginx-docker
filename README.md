@@ -33,4 +33,4 @@ To simplify this steps you can create a makefile and group this commands in a si
 ```shell
 docker-compose down && docker-compose build && docker-compose up -d
 ```
-CI/CD test
+CI/CD test...
