@@ -20,5 +20,5 @@ node{
   stage('Deploy Application') {
            sh("kubectl set image deployment/ingress-default ingress-default=abdullahbm/gohello:latest --namespace=${namespace}")
 }
-
+}
 
