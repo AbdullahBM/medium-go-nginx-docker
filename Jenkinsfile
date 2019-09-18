@@ -18,14 +18,7 @@ node{
   
   //Stage 3 : Deploy Application
   stage('Deploy Application') {
-       switch (namespace) {
-              //Roll out to Dev Environment
-              case "ingress-default":
-                   // Create namespace if it doesn't exist
-                   sh("kubectl get ns ${namespace} || kubectl create ns ${namespace}")
-                   //Create or update resources
            sh("kubectl set image deployment/ingress-default ingress-default=abdullahbm/gohello:latest --namespace=${namespace}")
-                   break
 }
-}
+
 
