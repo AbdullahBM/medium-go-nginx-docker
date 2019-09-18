@@ -26,4 +26,6 @@ node{
                    //Create or update resources
            sh("kubectl set image deployment/ingress-default ingress-default=abdullahbm/gohello:latest --namespace=${namespace}")
                    break
+}
+}
 
